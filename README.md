@@ -1,7 +1,3 @@
-Perfeito! Aqui está o seu código convertido em um arquivo `README.md` bem estruturado para colocar no GitHub:
-
----
-
 # 🛍️ E-Commerce Product CRUD API
 
 Uma API RESTful robusta e completa, construída com **Spring Boot**, que permite gerenciar produtos de um e-commerce, incluindo upload e armazenamento de imagens usando **MinIO**.
