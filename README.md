@@ -38,6 +38,8 @@ Uma API RESTful robusta e completa, construída com **Spring Boot**, que permite
 | `PUT`    | `/products/{id}` | Atualiza um produto por ID |
 | `DELETE` | `/products/{id}` | Deleta um produto por ID   |
 
+> ✅ Use `http://localhost:8080/products` como endpoint para interagir com sua API no **Postman**, **Insomnia** ou qualquer outra ferramenta de testes.
+
 ---
 
 ## 🏁 Como Rodar o Projeto
@@ -57,11 +59,11 @@ cd seu-repositorio
 docker-compose up -d
 ```
 
-> ⚠️ Acesse o MinIO em [http://localhost:9001](http://localhost:9001)
+> ⚠️ Acesse o painel do MinIO em: [http://localhost:9001](http://localhost:9001)
 > Login: `ROOTUSER`
 > Senha: `CHANGEME123`
 
-**Crie um bucket chamado `images`** para que o upload funcione corretamente.
+➡️ **Acesse [http://localhost:9001](http://localhost:9001) para criar um bucket chamado `images`**. Esse bucket será utilizado para armazenar as imagens dos produtos.
 
 ---
 
@@ -73,17 +75,25 @@ Se estiver usando Maven:
 ./mvnw spring-boot:run
 ```
 
-Ou pelo seu IDE (IntelliJ, VSCode, Eclipse).
+Ou diretamente pela sua IDE (IntelliJ, VSCode, Eclipse).
 
 ---
 
 ## 🔗 Acesso à API
 
-Por padrão a aplicação roda em:
+Por padrão, a API estará disponível em:
 
 ```
 http://localhost:8080
 ```
+
+➡️ Utilize o endpoint principal:
+
+```
+http://localhost:8080/products
+```
+
+Para testar os recursos de criação, listagem, atualização e remoção de produtos diretamente no Postman ou outra ferramenta similar.
 
 ---
 
